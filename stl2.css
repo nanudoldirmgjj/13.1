@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+#full {
+    width: 45%;
+    margin: 50px auto 20px auto;
+    /* border: 1px black solid; */
+    border-radius: 10px;
+}  
+#wthr {
+    width: 100%;
+    height: 280px;
+    background: #6B97CA;
+    border: #6B97CA 1px solid;
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+#forecast {
+    display: flex;
+    flex-direction: column;
+    border: #6B97CA 1px solid;
+        border-radius: 0 0  10px 10px;
+}
+.f{
+    width: 100%;
+    height: 80px;
+    border-top: #6B97CA 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
