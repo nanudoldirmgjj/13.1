@@ -1,4 +1,4 @@
-/*
+
 navigator.geolocation.getCurrentPosition(
     function(position) {
         let a = position.coords.latitude;
@@ -6,11 +6,13 @@ navigator.geolocation.getCurrentPosition(
 
 	    console.log('Последний раз вас засекали здесь: ' +
 		    position.coords.latitude + ", " + position.coords.longitude);
-  //  load(a,b);
+    load(a,b);
 
 	}
 );
-*/
+
+function load (a, b){
+
 
  function createElement(element, value) {
     let el = document.createElement(element);
@@ -77,8 +79,8 @@ http.addEventListener('load', () => {
 
 })
 
-http.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?q=Minsk&appid=a94d0a5ac08570add4b47b8da933f247&units=metric');
+http.open('GET', `http://api.openweathermap.org/data/2.5/forecast?lat=${a}&lon=${b}&units=metric&appid=248dee22376dff44b5f737f243fc02c6`);
 
 http.send();   
 
-
+}
