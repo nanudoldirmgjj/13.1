@@ -77,7 +77,7 @@ http.addEventListener('load', () => {
 
 })
 
-http.open('GET', 'https://api.openweathermaporg/geo/1.0/reverse?lat=' + a + '&lon=' + b + '&appid=a94d0a5ac08570add4b47b8da933f247&units=metric');
+http.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?q=Minsk&appid=a94d0a5ac08570add4b47b8da933f247&units=metric');
 
 http.send();   
 
